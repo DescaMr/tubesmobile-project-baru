@@ -1,19 +1,17 @@
-import'package:flutter/material.dart';
-import 'package:bottomnavbar/buttom%20curve%20navigation/curve_navigation_bar.dart';
+import 'package:flutter/material.dart';
 
-class ProfilePage extends StatelessWidget{
-  const ProfilePage ({super.key});
+class ProfilePage extends StatelessWidget {
+  const ProfilePage({super.key});
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Colors.lightGreenAccent,
       body: Center(
-        child: Text("Profile", style: TextStyle(fontWeight: 
-        FontWeight.bold,
-        fontSize: 60,
-        color: Colors.black
-        ),
+        child: Text(
+          "Profile",
+          style: TextStyle(
+              fontWeight: FontWeight.bold, fontSize: 60, color: Colors.black),
         ),
       ),
       // bottomNavigationBar: CurveBar(),

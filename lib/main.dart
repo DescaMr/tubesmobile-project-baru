@@ -1,5 +1,4 @@
 // import 'package:bottomnavbar/buttom%20curve%20navigation/curve_navigation_bar.dart';
-import 'package:bottomnavbar/components/drawer.dart';
 import 'package:bottomnavbar/pages/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -19,4 +18,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
