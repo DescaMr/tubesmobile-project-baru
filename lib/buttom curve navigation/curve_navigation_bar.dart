@@ -39,7 +39,9 @@ class _curveBarState extends State<CurveBar> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
+        iconTheme: IconThemeData(color: Colors.blue),
       ),
+      
       drawer: MyDrawer(),
       backgroundColor: Colors.blue[200],
       extendBody: true,

@@ -6,7 +6,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[100],
+      backgroundColor: Colors.grey[300],
       // drawer: MyDrawer(),
       // appBar: PreferredSize(
       //   preferredSize: Size.fromHeight(90.0),
@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
       // ),
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: 0),
+          padding: EdgeInsets.only(top:20.0),
           child: SingleChildScrollView(
             child: Column(
               children: [
@@ -26,6 +26,7 @@ class HomePage extends StatelessWidget {
                       child: Container(
                         height: 200,
                         child: ListView.builder(
+
                             itemCount: 6,
                             scrollDirection: Axis.horizontal,
                             shrinkWrap: true,
