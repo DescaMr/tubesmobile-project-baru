@@ -35,26 +35,20 @@ class MyDrawer extends StatelessWidget {
           
           // list tile
           ListTile(
-            leading: const Icon(Icons.person, color: Colors.blue,),
-            title: const Text('P R O F I L E', style: TextStyle(color: Colors.blue)),
+            leading: const Icon(Icons.people, color: Colors.blue,),
+            title: const Text('A B O U T  U S', style: TextStyle(color: Colors.blue)),
             onTap: () {
             Navigator.pop(context);
             },
           ),
           ListTile(
-            leading: const Icon(Icons.home, color: Colors.blue,),
-            title: const Text('H O M E', style: TextStyle(color: Colors.blue)),
+            leading: const Icon(Icons.logout_outlined, color: Colors.blue,),
+            title: const Text('L O G  O U T', style: TextStyle(color: Colors.blue)),
             onTap: () {
             Navigator.pop(context);
             },
           ),
-          ListTile(
-            leading: const Icon(Icons.location_on, color: Colors.blue,),
-            title: const Text('L O C A T I O N', style: TextStyle(color: Colors.blue)),
-            onTap: () {
-            Navigator.pop(context);
-            },
-          ),
+          
           
         ],
       ),
