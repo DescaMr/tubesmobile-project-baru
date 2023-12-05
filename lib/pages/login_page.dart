@@ -25,7 +25,7 @@ class LoginPage extends StatelessWidget {
                 labelStyle: TextStyle(color: Colors.black54),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide: BorderSide(color: Colors.black12, width: 1),
+                  borderSide: BorderSide(color: Colors.black54, width: 1),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),

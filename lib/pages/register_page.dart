@@ -15,10 +15,6 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Register'),
-        backgroundColor: Colors.blue, // Ubah warna latar belakang app bar
-      ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Column(
@@ -36,7 +32,10 @@ class _RegisterPageState extends State<RegisterPage> {
                 labelText: 'Email',
                 labelStyle: TextStyle(color: Colors.black54),
                 
-                border: OutlineInputBorder(),
+                border: OutlineInputBorder(
+                   borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(color: Colors.black54, width: 1),
+                ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
                   borderSide: BorderSide(color: Colors.blue, width: 1),
@@ -50,7 +49,10 @@ class _RegisterPageState extends State<RegisterPage> {
                 labelText: 'Password',
                 labelStyle: TextStyle(color: Colors.black54),
                 
-                border: OutlineInputBorder(),
+                border: OutlineInputBorder(
+                   borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(color: Colors.black54, width: 1),
+                ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
                   borderSide: BorderSide(color: Colors.blue, width: 1),
@@ -60,6 +62,7 @@ class _RegisterPageState extends State<RegisterPage> {
             ),
             SizedBox(height: 10),
             TextField(
+              
               controller: _confirmPasswordController,
               decoration: InputDecoration(
                 labelText: 'Confirm Password',
