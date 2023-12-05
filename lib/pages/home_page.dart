@@ -1,3 +1,4 @@
+import 'package:bottomnavbar/pages/post_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -36,7 +37,7 @@ class HomePage extends StatelessWidget {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                        builder: (context) => HomePage(),
+                                        builder: (context) => PostScreen(),
                                       ));
                                 },
                                 child: Container(

@@ -1,5 +1,6 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:bottomnavbar/buttom%20curve%20navigation/curve_navigation_bar.dart';
+import 'package:bottomnavbar/pages/login_page.dart';
+
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -34,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
       splashTransition: SplashTransition.fadeTransition,
       duration: 2000,
       backgroundColor: Colors.white,
-      nextScreen: const CurveBar(),
+      nextScreen: LoginPage(),
     );
   }
 }

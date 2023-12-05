@@ -1,3 +1,4 @@
+import 'package:bottomnavbar/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -45,7 +46,9 @@ class MyDrawer extends StatelessWidget {
             leading: const Icon(Icons.logout_outlined, color: Colors.blue,),
             title: const Text('L O G  O U T', style: TextStyle(color: Colors.blue)),
             onTap: () {
-            Navigator.pop(context);
+            Navigator.push(
+          context,MaterialPageRoute(builder: (context) => LoginPage()),
+        );
             },
           ),
           

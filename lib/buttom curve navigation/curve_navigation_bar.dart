@@ -52,7 +52,7 @@ class _curveBarState extends State<CurveBar> {
         // // selected times colors
         buttonBackgroundColor: Colors.blue,
         backgroundColor: Colors.transparent,
-        animationDuration: Duration(milliseconds: 300),
+        animationDuration: Duration(milliseconds: 400),
         items: items,
         height: 60,
         index: index,
