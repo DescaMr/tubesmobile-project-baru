@@ -18,11 +18,11 @@ class _SplashScreenState extends State<SplashScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(
-            'images/logopantai.png',
+            'images/logo.png',
             width: 300,
           ),
           const Text(
-            'Hayu Mantai',
+            'Cianjur Beach',
             style: TextStyle(
               fontSize: 35,
               fontWeight: FontWeight.bold,

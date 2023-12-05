@@ -26,7 +26,7 @@ class _RegisterPageState extends State<RegisterPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset(
-              'images/logopantai.png', // Ganti dengan path gambar registrasi
+              'images/logo.png', // Ganti dengan path gambar registrasi
               height: 100,
             ),
             SizedBox(height: 20),

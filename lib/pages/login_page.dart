@@ -16,7 +16,7 @@ class LoginPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('images/logopantai.png'),
+            Image.asset('images/logo.png'),
             SizedBox(height: 32),
             TextField(
               controller: usernameController,
