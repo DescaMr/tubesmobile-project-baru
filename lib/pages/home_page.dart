@@ -27,8 +27,7 @@ class HomePage extends StatelessWidget {
                       child: Container(
                         height: 200,
                         child: ListView.builder(
-
-                            itemCount: 6,
+                            itemCount: 10,
                             scrollDirection: Axis.horizontal,
                             shrinkWrap: true,
                             itemBuilder: (BuildContext context, int index) {
