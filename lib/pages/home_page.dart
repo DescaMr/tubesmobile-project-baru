@@ -1,8 +1,15 @@
 import 'package:bottomnavbar/pages/post_screen.dart';
+// import 'package:bottomnavbar/pages/dummy.data.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+    const HomePage({Key? key}) : super(key: key);
+  //  final List<City> cities = [
+  //   City(name: "Kota 1", imagePath: "images/city1.jpg", rating: 4.9),
+  //   City(name: "Kota 2", imagePath: "images/city2.jpg", rating: 4.8),
+  //   // Tambahkan kota-kota lain sesuai kebutuhan
+  // ];
+
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +34,7 @@ class HomePage extends StatelessWidget {
                       child: Container(
                         height: 200,
                         child: ListView.builder(
-                            itemCount: 10,
+                            itemCount: 6,
                             scrollDirection: Axis.horizontal,
                             shrinkWrap: true,
                             itemBuilder: (BuildContext context, int index) {

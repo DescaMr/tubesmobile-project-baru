@@ -3,6 +3,7 @@ import 'package:bottomnavbar/pages/register_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
+  
   final TextEditingController usernameController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
@@ -66,7 +67,7 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 8),
+            SizedBox(height: 5.0),
             TextButton(
               onPressed: () {
                 Navigator.push(
