@@ -22,7 +22,7 @@ var BeachList = [
 Beach(
   name: 'Karang Potong Beach',
   Location: 'Cianjur',
-   description: 'ini adalah karang potong beach',
+   description: 'Wisata Karang Potong Cianjur terletak di Kampung Sedekan, Desa Saganten, Kecamatan Sindangbarang, Kabupaten Cianjur, Jawa Barat. Jam operasionalnya mulai pukul 08:00 hingga 21:00 WIB Keindahan Karang Potong Cianjur ini terletak pada bangunan-bangunan berwarna terang, yaitu perpaduan putih dan biru dengan design layaknya istana fantasi. Tidak cukup sampai di situ, perpaduan warna pelangi akan Anda temukan di sini. Dalam bangunannya, disisipi oleh rumput-rumput hijau segar dan pohon kelapa khas pantai. Wisata Ocean View memiliki fasilitas untuk anak-anak hingga dewasa. Anak-anak akan menikmati berbagai perosotan, sepeda mini yang lucu, ayunan, bermain pasir, dan lainnya.',
    rating: '4.9',
     openDay: 'open everyday',
      openTime: 'openTime',
