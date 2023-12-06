@@ -31,9 +31,8 @@ class _RegisterPageState extends State<RegisterPage> {
               decoration: InputDecoration(
                 labelText: 'Email',
                 labelStyle: TextStyle(color: Colors.black54),
-                
                 border: OutlineInputBorder(
-                   borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(10),
                   borderSide: BorderSide(color: Colors.black54, width: 1),
                 ),
                 focusedBorder: OutlineInputBorder(
@@ -48,9 +47,8 @@ class _RegisterPageState extends State<RegisterPage> {
               decoration: InputDecoration(
                 labelText: 'Password',
                 labelStyle: TextStyle(color: Colors.black54),
-                
                 border: OutlineInputBorder(
-                   borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(10),
                   borderSide: BorderSide(color: Colors.black54, width: 1),
                 ),
                 focusedBorder: OutlineInputBorder(
@@ -62,13 +60,14 @@ class _RegisterPageState extends State<RegisterPage> {
             ),
             SizedBox(height: 10),
             TextField(
-              
               controller: _confirmPasswordController,
               decoration: InputDecoration(
                 labelText: 'Confirm Password',
                 labelStyle: TextStyle(color: Colors.black54),
-                
-                border: OutlineInputBorder(),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(color: Colors.black54, width: 1),
+                ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
                   borderSide: BorderSide(color: Colors.blue, width: 1),
@@ -84,7 +83,10 @@ class _RegisterPageState extends State<RegisterPage> {
                   MaterialPageRoute(builder: (context) => LoginPage()),
                 );
               },
-              child: Text('R E G I S T E R', style: TextStyle(color: Colors.white),),
+              child: Text(
+                'R E G I S T E R',
+                style: TextStyle(color: Colors.white),
+              ),
               style: ElevatedButton.styleFrom(
                 primary: Colors.blue, // Ubah warna tombol
                 padding: EdgeInsets.symmetric(vertical: 16),
