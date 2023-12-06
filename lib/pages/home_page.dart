@@ -1,5 +1,5 @@
 import 'package:bottomnavbar/pages/post_screen.dart';
-// import 'package:bottomnavbar/pages/dummy.data.dart';
+import 'package:bottomnavbar/pages/dummy.data.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -34,10 +34,12 @@ class HomePage extends StatelessWidget {
                       child: Container(
                         height: 200,
                         child: ListView.builder(
-                            itemCount: 6,
+                          
+                            itemCount: 3,
                             scrollDirection: Axis.horizontal,
                             shrinkWrap: true,
                             itemBuilder: (BuildContext context, int index) {
+                              final Beach place = BeachList[index];
                               return InkWell(
                                 onTap: () {
                                   Navigator.push(
@@ -56,7 +58,7 @@ class HomePage extends StatelessWidget {
                                     image: DecorationImage(
                                       //city1.jpg
                                       image: AssetImage(
-                                          "images/city${index + 1}.jpg"),
+                                          place.imageAsset),
                                       fit: BoxFit.cover,
                                       opacity: 0.7,
                                     ),
@@ -75,7 +77,7 @@ class HomePage extends StatelessWidget {
                                       Container(
                                         alignment: Alignment.bottomLeft,
                                         child: Text(
-                                          "City Name",
+                                          place.name,
                                           style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 18,
@@ -130,9 +132,10 @@ class HomePage extends StatelessWidget {
                 SizedBox(height: 10),
                 ListView.builder(
                   physics: NeverScrollableScrollPhysics(),
-                  itemCount: 6,
+                  itemCount: 3,
                   shrinkWrap: true,
                   itemBuilder: (BuildContext context, int index) {
+                    final Beach place = BeachList[index];
                     return Padding(
                       padding: EdgeInsets.all(15),
                       child: Column(
@@ -152,7 +155,7 @@ class HomePage extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(15),
                                 image: DecorationImage(
                                   image:
-                                      AssetImage("images/city${index + 1}.jpg"),
+                                      AssetImage(place.imageAsset),
                                   fit: BoxFit.cover,
                                   opacity: 0.8,
                                 ),
@@ -165,7 +168,7 @@ class HomePage extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
-                                  "City Name",
+                                  place.name,
                                   style: TextStyle(
                                     fontSize: 20,
                                     fontWeight: FontWeight.w600,
@@ -184,7 +187,7 @@ class HomePage extends StatelessWidget {
                                 size: 20,
                               ),
                               Text(
-                                "4.9",
+                                place.rating,
                                 style: TextStyle(fontWeight: FontWeight.w500),
                               )
                             ],
