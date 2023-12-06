@@ -34,18 +34,19 @@ class HomePage extends StatelessWidget {
                       child: Container(
                         height: 200,
                         child: ListView.builder(
-                          
                             itemCount: 3,
                             scrollDirection: Axis.horizontal,
                             shrinkWrap: true,
-                            itemBuilder: (BuildContext context, int index) {
+                            itemBuilder: (context, index) {
                               final Beach place = BeachList[index];
                               return InkWell(
                                 onTap: () {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                        builder: (context) => PostScreen(),
+                                        builder: (context){
+                                          return PostScreen(place: place);
+                                        } 
                                       ));
                                 },
                                 child: Container(
@@ -145,19 +146,21 @@ class HomePage extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => HomePage(),
-                                  ));
+                                  builder: (context){
+                                  return PostScreen(place: place);
+                                 } 
+                              ));
                             },
                             child: Container(
                               height: 200,
                               decoration: BoxDecoration(
-                                color: Colors.black,
+                                // color: Colors.black,
                                 borderRadius: BorderRadius.circular(15),
                                 image: DecorationImage(
                                   image:
                                       AssetImage(place.imageAsset),
                                   fit: BoxFit.cover,
-                                  opacity: 0.8,
+                                  // opacity: 0.8,
                                 ),
                               ),
                             ),

@@ -1,17 +1,21 @@
+import 'package:bottomnavbar/pages/dummy.data.dart';
 import 'package:flutter/material.dart';
 import 'package:bottomnavbar/components/post_app_bar.dart';
 import 'package:bottomnavbar/components/post_bottom_bar.dart';
 
 class PostScreen extends StatelessWidget{
+  final Beach place;
+
+  const PostScreen({Key? key, required this.place}): super(key: key);
   @override
   Widget build(BuildContext context){
     return Container(
       decoration: BoxDecoration(
-        color: Colors.black,
+        // color: Colors.black,
         image: DecorationImage(
-          image: AssetImage('images/city6.jpg'),
+          image: AssetImage(place.imageAsset),
           fit: BoxFit.cover,
-          opacity: 0.7, 
+          // opacity: 0.7, 
         ),
       ),
       child: Scaffold(
@@ -20,7 +24,7 @@ class PostScreen extends StatelessWidget{
           preferredSize: Size.fromHeight(90), 
         child: PostAppBar(),
         ),
-        bottomNavigationBar: PostBottomBar(),
+        bottomNavigationBar: PostBottomBar(place: place),
       ),
     );
   }

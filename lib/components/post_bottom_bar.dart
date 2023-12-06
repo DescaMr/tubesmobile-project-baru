@@ -1,6 +1,10 @@
+import 'package:bottomnavbar/pages/dummy.data.dart';
 import 'package:flutter/material.dart';
 
 class PostBottomBar extends StatelessWidget {
+  final Beach place;
+
+  const PostBottomBar({Key? key, required this.place}) : super(key: key);
   @override
   Widget build(BuildContext context){
     return Container(
@@ -23,7 +27,7 @@ class PostBottomBar extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "City Name, Country",
+                      place.name,
                       style: TextStyle(
                         fontSize: 23,
                         fontWeight: FontWeight.w600,
@@ -36,7 +40,7 @@ class PostBottomBar extends StatelessWidget {
                           color: Colors.amber,
                         ),
                         Text(
-                          "4.9",
+                          place.rating,
                           style: TextStyle(
                             fontWeight: FontWeight.w600,
                           ),
@@ -52,55 +56,55 @@ class PostBottomBar extends StatelessWidget {
                 textAlign: TextAlign.justify,
                 ),
                 SizedBox(height: 20),
-                Row(
-                  children: [
-                    Padding( 
-                    padding: EdgeInsets.only(right: 5),
-                    child: Expanded(
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(15),
-                        child: Image.asset(
-                          "images/city5.jpg",
-                          fit: BoxFit.cover,
-                          width: 120,
-                          height: 90,
-                        ),
-                      ),
-                    ),
-                    ),
-                    Padding( 
-                    padding: EdgeInsets.only(right: 5),
-                    child: Expanded(
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(15),
-                        child: Image.asset(
-                          "images/city4.jpg",
-                          fit: BoxFit.cover,
-                          width: 120,
-                          height: 90,
-                        ),
-                      ),
-                    ),
-                    ),
-                    Expanded(
-                      child: Container(
-                        alignment: Alignment.center,
-                        width: 120,
-                        height: 90,
-                        margin: EdgeInsets.only(right: 5),
-                        decoration: BoxDecoration(
-                          color: Colors.black,
-                          borderRadius: BorderRadius.circular(15),
-                          image: DecorationImage(
-                            image: AssetImage("images/city6.jpg"),
-                            fit: BoxFit.cover,
-                             opacity: 0.4,
-                          ),
-                        ),
-                      ), 
-                    ),
-                  ],
-                ),
+                // Row(
+                //   children: [
+                //     Padding( 
+                //     padding: EdgeInsets.only(right: 5),
+                //     child: Expanded(
+                //       child: ClipRRect(
+                //         borderRadius: BorderRadius.circular(15),
+                //         child: Image.asset(
+                //           "images/city5.jpg",
+                //           fit: BoxFit.cover,
+                //           width: 120,
+                //           height: 90,
+                //         ),
+                //       ),
+                //     ),
+                //     ),
+                //     Padding( 
+                //     padding: EdgeInsets.only(right: 5),
+                //     child: Expanded(
+                //       child: ClipRRect(
+                //         borderRadius: BorderRadius.circular(15),
+                //         child: Image.asset(
+                //           "images/city4.jpg",
+                //           fit: BoxFit.cover,
+                //           width: 120,
+                //           height: 90,
+                //         ),
+                //       ),
+                //     ),
+                //     ),
+                //     Expanded(
+                //       child: Container(
+                //         alignment: Alignment.center,
+                //         width: 120,
+                //         height: 90,
+                //         margin: EdgeInsets.only(right: 5),
+                //         decoration: BoxDecoration(
+                //           color: Colors.black,
+                //           borderRadius: BorderRadius.circular(15),
+                //           image: DecorationImage(
+                //             image: AssetImage("images/city6.jpg"),
+                //             fit: BoxFit.cover,
+                //              opacity: 0.4,
+                //           ),
+                //         ),
+                //       ), 
+                //     ),
+                //   ],
+                // ),
               ],
             ), 
           ),
