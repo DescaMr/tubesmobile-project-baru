@@ -40,7 +40,7 @@ Beach(
 Beach(
   name: 'Apra Beach',
   Location: 'Cianjur',
-   description: 'ini adalah karang potong beach',
+   description: 'Pantai Apra berlokasi di Kecamatan Sindangbrang, Cianjur Selatan atau lebih tepatnya sekitar 300 meter dari Alun-alun Sindangbarang. Biasanya, pantai ini ramai dikunjungi saat liburan panjang dan lebaran tiba. Dinamakan Pantai Apra, ternyata juga mengandung sejarah yang cukup penting.Pantai Apra Sindangbarang masih dikelola swadaya sehinggaharga tiket masuknyapun tidak mahal. Hanya berkisar dari Rp 2.000 –  Rp 5.000 ',
    rating: '4.7',
     openDay: 'open everyday',
      openTime: 'openTime',
