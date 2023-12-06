@@ -31,7 +31,7 @@ Beach(
 Beach(
   name: 'Jayanti Beach',
   Location: 'Cianjur',
-   description: 'ini adalah karang potong beach',
+   description: 'Merupakan tempat objek wisata sekaligus pelabuhan tradisional.Di Pantai ini kita bisa menyewa perahu untuk ketengah laut. Fasilitas penunjang seperti tempat makan, saung - saung untuk berteduh dan bisa menginap di penginapan - penginapan dengan harga terjangkau. Harga masuk pelabuhan Jayanti untuk roda dua berkisar 5.000,- Sedangkan untuk roda empat 15.000,-',
    rating: '4.6',
     openDay: 'open everyday',
      openTime: 'openTime',
