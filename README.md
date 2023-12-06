@@ -1,6 +1,6 @@
-# bottomnavbar
+# App Cianjur Beach (v1.0)
 
-A new Flutter project.
+Tugas Besar Mobile membuat aplikasi wisata cianjur
 
 ## Getting Started
 
