@@ -41,7 +41,6 @@ class _curveBarState extends State<CurveBar> {
         centerTitle: true,
         iconTheme: IconThemeData(color: Colors.blue),
       ),
-      
       drawer: MyDrawer(),
       backgroundColor: Colors.blue[200],
       extendBody: true,
